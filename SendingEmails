@@ -1,0 +1,36 @@
+---
+openapi: 3.0.0
+definitions:
+  callback:
+    type: object
+    properties:
+      URI: POST /send/email/single
+      type: string
+  senderInfo:
+    type: object
+    properties:
+      organisationName:
+        type: string
+      organisationRegNr:
+        type: string
+      onBehalfOfName:
+        type: string
+      onBehalfOfRegNr:
+        type: string
+      email:
+        type: string
+      replyTo:
+        type: string
+      name:
+        type: string
+  recipientInfo:
+    type: object
+    properties:
+      email:
+        type: string
+      emailCC:
+        type: string
+      emailBCC:
+        type: string
+      name:
+        type: string
